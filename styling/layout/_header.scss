@@ -1,0 +1,35 @@
+.header {
+    background-color: $main-black;
+    height: 100vh;
+    overflow: hidden;
+
+    @media (max-height: 700px) {
+        height: 100%;
+    }
+
+    &__hero {
+        margin-top: 7rem;
+
+        .typer {
+            margin-bottom: 3rem;
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 0.2rem;
+                margin-left: 0.4rem;
+                height: 4rem;
+                border-right: solid 4px #f57261;
+                animation: flicker 0.5s infinite ease;
+
+                @media (min-width: $media-m) {
+                    height: 5rem;
+                }
+
+                @media (min-width: $media-l) {
+                    height: 6rem;
+                }
+            }
+        }
+    }
+}

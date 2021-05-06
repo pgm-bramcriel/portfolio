@@ -1,0 +1,99 @@
+h1,
+h2,
+span,
+a {
+    color: $main-white;
+    transition: $transition;
+}
+
+.highlight,
+.prefix,
+.typer {
+    color: $main-red;
+}
+
+.prefix {
+    margin-right: 1rem;
+}
+
+p,
+h2 {
+    color: $main-black;
+}
+
+main {
+    background-color: $main-white;
+    padding-top: 7rem;
+
+    section {
+        margin-bottom: 8rem;
+
+        @media (min-width: $media-l) {
+            margin-bottom: 10rem;
+        }
+    }
+}
+
+.header {
+    padding: 1.5rem $padding-s;
+    
+    @media (min-width: $media-s) {
+        padding: 2rem $padding-l;
+    }
+}
+
+.about,
+.projects,
+.contact {
+    padding: 1.5rem $padding-s;
+    
+    @media (min-width: $media-s) {
+        padding: 2rem $padding-l;
+    }
+
+    @media (min-width: 125rem) {
+        padding: 0;
+    }
+}
+
+.header__hero {
+    .canvas-wrapper {
+        display: flex;
+        justify-content: center;
+
+        #canvas {
+            width: 100%;
+            margin-top: 4rem;
+        
+            @media (min-width: $media-s) {
+                width: 70%;
+            }
+    
+            @media (min-width: $media-m) {
+                margin-top: 0;
+                width: 50%;
+            }
+
+            @media (min-width: $media-l) {
+                width: 20rem;
+                height: 17rem;
+                margin-top: 0;
+            }
+
+            @media (min-width: 75rem) {
+                width: 30rem;
+                height: inherit;
+            }
+        }
+    }
+
+    @media (min-width: $media-l) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}

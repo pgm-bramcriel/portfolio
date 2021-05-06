@@ -1,0 +1,47 @@
+.about {
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    &__content {
+        margin-bottom: $margin-l;
+        max-width: 40rem;
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        background-color: white;
+        padding: 6rem 3rem 0rem 3rem;
+        border-radius: $radius-s;
+        box-shadow: $shadow-s;
+
+        svg {
+            max-width: 65%;
+
+            @media (min-width: $media-s) {
+                max-width: 50%;
+            }
+        }
+    }
+
+    @media (min-width: $media-l) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        
+        &__content {
+            width: 30%;
+        }
+
+        &__img {
+            width: 60%;
+            box-shadow: $shadow-m;
+
+            svg {
+                max-width: 40%;
+            }
+        }
+    }
+}

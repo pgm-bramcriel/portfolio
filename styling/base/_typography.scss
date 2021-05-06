@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+html {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-size: $heading-m;
+    font-weight: bold;
+
+    @media (min-width: $media-m) {
+        font-size: $heading-l;
+    }
+
+    @media (min-width: $media-l) {
+        font-size: $heading-xl;
+    }
+}
+
+h2,
+h3 {
+    font-size: $heading-s;
+    font-weight: bold;
+
+    @media (min-width: $media-m) {
+        font-size: $heading-m;
+    }
+}
+
+p {
+    font-size: $paragraph-s;
+
+    @media (min-width: $media-m) {
+        font-size: $paragraph-m;
+    }
+
+    @media (min-width: $media-l) {
+        font-size: $paragraph-l;
+    }
+}
+
+a {
+    font-size: $general-s;
+}

@@ -1,0 +1,61 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        a {
+            font-weight: bold;
+            font-size: $heading-s;
+            text-shadow: 2px -4px rgba(224, 224, 224, 0.205);
+
+            &:hover {
+                text-shadow: 6px -5px rgba(224, 224, 224, 0.205);
+            }
+
+            @media (min-width: $media-s) {
+                font-size: $heading-m;
+            }
+        }
+    }
+
+    &__items {
+        display: none;
+
+        li {
+            margin-right: $general-l;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a:hover {
+                color: $main-red;
+            }
+        }
+        
+        @media (min-width: $media-l) {
+            display: flex;
+        }
+    }
+
+    &__hamburger {
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        
+        svg {
+            width: 100%;
+            height: 100%;
+            fill: $main-white;
+
+            .path--red {
+                fill: $main-red;
+            }
+        }
+
+        @media (min-width: $media-l) {
+            display: none;
+        }
+    }
+}
