@@ -1,0 +1,16 @@
+{
+  "name": "portfolio_bram_criel",
+  "version": "1.0.0",
+  "description": "Portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --style=compressed styling/main.scss css/main.css",
+    "start": "npm run sass -- --watch"
+  },
+  "author": "Bram Criel",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  }
+}
