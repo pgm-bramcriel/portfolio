@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bram Criel - Portfolio</title>
     <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicon/apple-icon-57x57.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <header class="header">
@@ -21,7 +28,7 @@
             <ul class="nav__items">
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><a href="#">Skills</a></li>
             </ul>
         </nav>
@@ -43,52 +50,53 @@
     </header>
 
     <main>
-        <div class="container">
-            <section class="about" id="about">
-                <div class="about__content show-on-scroll">
-                    <h2><span class="prefix">#</span>About me</h2>
-                    <p>I'm a <span class="highlight">junior developer </span>who is passionate about making <span class="highlight">responsive websites</span>. In my free time i enjoy playing sports and playing piano.</p>
+        <div>
+            <section id="about">
+                <div class="about container">
+                    <div class="about__content show-on-scroll">
+                        <h2><span class="prefix">#</span>About me</h2>
+                        <p>I'm a <span class="highlight">junior developer </span>who is passionate about making <span class="highlight">responsive websites</span>. In my free time i enjoy playing sports and playing piano.</p>
+                    </div>
+                    <figure class="about__img show-on-scroll">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.272 400.272">
+                            <g id="Flat" transform="translate(-24 -24)">
+                              <path id="Path_1" data-name="Path 1" d="M394.815,251.6v41.407H312V251.6a13.793,13.793,0,0,0,13.8-13.8V224h55.21v13.8a13.784,13.784,0,0,0,13.8,13.8Z" transform="translate(-39.555 -27.469)" fill="#fdc8a2"/>
+                              <path id="Path_2" data-name="Path 2" d="M383.888,243.185A65.653,65.653,0,0,1,324.96,245.9a13.767,13.767,0,0,0,2.622-8.1V224h55.21v13.8A13.673,13.673,0,0,0,383.888,243.185Z" transform="translate(-41.335 -27.469)" fill="#fdbf92"/>
+                              <path id="Path_3" data-name="Path 3" d="M241.194,282.029,224,325.012h55.21V428.531H403.432V325.012h48.309V297.407A41.407,41.407,0,0,0,410.334,256h-27.6l-7.741,10.322a43.208,43.208,0,0,1-73.214-6.6l-1.86-3.72H279.641a41.408,41.408,0,0,0-38.448,26.031Z" transform="translate(-27.469 -31.864)" fill="#f57261"/>
+                              <path id="Path_4" data-name="Path 4" d="M424,304h13.8V331.6H424Z" transform="translate(-54.938 -38.456)" fill="#d64a34"/>
+                              <path id="Path_5" data-name="Path 5" d="M353.957,324.478A76.019,76.019,0,0,1,316,314.307l6.9-11.953a62.111,62.111,0,0,0,58.129,2.11l6.017,12.422A76.352,76.352,0,0,1,353.957,324.478Z" transform="translate(-40.104 -38.23)" fill="#d64a34"/>
+                              <path id="Path_6" data-name="Path 6" d="M231.21,439.519H176L217.407,336h55.21Z" transform="translate(-20.876 -42.851)" fill="#fdc8a2"/>
+                              <path id="Path_7" data-name="Path 7" d="M20.7,0h13.8V41.407H20.7A20.7,20.7,0,0,1,20.7,0Z" transform="translate(396.667 155.124) rotate(180)" fill="#fdb683"/>
+                              <path id="Path_8" data-name="Path 8" d="M276.7,128h13.8v41.407H276.7a20.7,20.7,0,0,1,0-41.407Z" transform="translate(-31.864 -14.284)" fill="#fdb683"/>
+                              <path id="Path_9" data-name="Path 9" d="M321.408,64h48.309a41.407,41.407,0,0,1,41.407,41.407v44.858a65.562,65.562,0,1,1-131.124,0V105.407A41.407,41.407,0,0,1,321.408,64Z" transform="translate(-35.16 -5.494)" fill="#fdc8a2"/>
+                              <path id="Path_10" data-name="Path 10" d="M425.407,115.914l-15.219-5.073A38.3,38.3,0,0,1,384,74.506V40a41.407,41.407,0,0,1,41.407,41.407Z" transform="translate(-49.444 -2.198)" fill="#0e0e0e"/>
+                              <path id="Path_11" data-name="Path 11" d="M367.519,37.8V72.309a164.135,164.135,0,0,1-43.547,20.557,164.336,164.336,0,0,1-47.627,7.048H264V79.21A55.21,55.21,0,0,1,319.21,24h25.975a24.966,24.966,0,0,1,22.336,13.806Z" transform="translate(-32.963 0)" fill="#0e0e0e"/>
+                              <path id="Path_12" data-name="Path 12" d="M351.7,60.1c-.914.914-23.154,22.5-86.938,29.58l-.759.069V82.821a55,55,0,0,1,.44-7c29.813-3.433,49.249-10.136,60.351-15.191,12.12-5.521,17.141-10.291,17.184-10.343Z" transform="translate(-32.963 -3.611)" fill="#331c14"/>
+                              <path id="Path_13" data-name="Path 13" d="M316.045,53.19c-.621.311-15.6,7.626-44.5,7.626l-2.83-.138a54.48,54.48,0,0,1,8.109-13.751c21.817-.768,32.962-6.047,33.083-6.108Z" transform="translate(-33.611 -2.31)" fill="#33221d"/>
+                              <path id="Path_14" data-name="Path 14" d="M317.8,155.6a13.8,13.8,0,1,1,13.8-13.8,13.8,13.8,0,0,1-13.8,13.8Z" transform="translate(-38.456 -14.284)" fill="#844e3a"/>
+                              <path id="Path_15" data-name="Path 15" d="M381.8,155.6a13.8,13.8,0,1,1,13.8-13.8A13.8,13.8,0,0,1,381.8,155.6Z" transform="translate(-47.246 -14.284)" fill="#844e3a"/>
+                              <path id="Path_16" data-name="Path 16" d="M348.1,189.024a44.821,44.821,0,0,1-24.468-7.253l7.528-11.569a31.078,31.078,0,0,0,33.88,0l7.528,11.569A44.821,44.821,0,0,1,348.1,189.024Z" transform="translate(-41.153 -20.08)" fill="#fcb079"/>
+                              <path id="Path_17" data-name="Path 17" d="M24,456H424.272v27.6H24Z" transform="translate(0 -59.333)" fill="#0e0e0e"/>
+                              <rect id="Rectangle_4" data-name="Rectangle 4" width="235" height="165" rx="24" transform="translate(24 176.272)" fill="#d5d5d3"/>
+                              <g id="Group_1" data-name="Group 1" transform="translate(44.704 203.432)">
+                                <path id="Path_18" data-name="Path 18" d="M96,232h27.6v13.8H96Z" transform="translate(-54.593 -232)" fill="#c6c6c4"/>
+                                <path id="Path_19" data-name="Path 19" d="M144,232h27.6v13.8H144Z" transform="translate(-61.185 -232)" fill="#c6c6c4"/>
+                                <path id="Path_20" data-name="Path 20" d="M192,232h27.6v13.8H192Z" transform="translate(-67.778 -232)" fill="#c6c6c4"/>
+                                <path id="Path_21" data-name="Path 21" d="M240,232h27.6v13.8H240Z" transform="translate(-74.37 -232)" fill="#c6c6c4"/>
+                                <path id="Path_22" data-name="Path 22" d="M48,232H75.6v13.8H48Z" transform="translate(-48 -232)" fill="#c6c6c4"/>
+                              </g>
+                              <path id="Path_23" data-name="Path 23" d="M160,385.407h27.6L180.7,344H160Z" transform="translate(-18.679 -43.95)" fill="#cececc"/>
+                              <path id="Path_24" data-name="Path 24" d="M112,424h82.815V451.6H112Z" transform="translate(-12.086 -54.938)" fill="#d5d5d3"/>
+                              <path id="Path_25" data-name="Path 25" d="M149.012,440.617H80L121.407,344h48.309Z" transform="translate(-7.691 -43.95)" fill="#dfdfdd"/>
+                              <path id="Path_26" data-name="Path 26" d="M240,424h82.815V451.6H240Z" transform="translate(-29.666 -54.938)" fill="#d5d5d3"/>
+                              <path id="Path_27" data-name="Path 27" d="M413.321,336v55.21H323.6a27.6,27.6,0,0,0-27.6,27.6v13.8a6.9,6.9,0,0,0,6.9,6.9h110.42A48.309,48.309,0,0,0,461.63,391.21V336Z" transform="translate(-37.358 -42.851)" fill="#fdc8a2"/>
+                            </g>
+                          </svg>
+                    </figure>
                 </div>
-
-                <figure class="about__img show-on-scroll">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400.272 400.272">
-                        <g id="Flat" transform="translate(-24 -24)">
-                          <path id="Path_1" data-name="Path 1" d="M394.815,251.6v41.407H312V251.6a13.793,13.793,0,0,0,13.8-13.8V224h55.21v13.8a13.784,13.784,0,0,0,13.8,13.8Z" transform="translate(-39.555 -27.469)" fill="#fdc8a2"/>
-                          <path id="Path_2" data-name="Path 2" d="M383.888,243.185A65.653,65.653,0,0,1,324.96,245.9a13.767,13.767,0,0,0,2.622-8.1V224h55.21v13.8A13.673,13.673,0,0,0,383.888,243.185Z" transform="translate(-41.335 -27.469)" fill="#fdbf92"/>
-                          <path id="Path_3" data-name="Path 3" d="M241.194,282.029,224,325.012h55.21V428.531H403.432V325.012h48.309V297.407A41.407,41.407,0,0,0,410.334,256h-27.6l-7.741,10.322a43.208,43.208,0,0,1-73.214-6.6l-1.86-3.72H279.641a41.408,41.408,0,0,0-38.448,26.031Z" transform="translate(-27.469 -31.864)" fill="#f57261"/>
-                          <path id="Path_4" data-name="Path 4" d="M424,304h13.8V331.6H424Z" transform="translate(-54.938 -38.456)" fill="#d64a34"/>
-                          <path id="Path_5" data-name="Path 5" d="M353.957,324.478A76.019,76.019,0,0,1,316,314.307l6.9-11.953a62.111,62.111,0,0,0,58.129,2.11l6.017,12.422A76.352,76.352,0,0,1,353.957,324.478Z" transform="translate(-40.104 -38.23)" fill="#d64a34"/>
-                          <path id="Path_6" data-name="Path 6" d="M231.21,439.519H176L217.407,336h55.21Z" transform="translate(-20.876 -42.851)" fill="#fdc8a2"/>
-                          <path id="Path_7" data-name="Path 7" d="M20.7,0h13.8V41.407H20.7A20.7,20.7,0,0,1,20.7,0Z" transform="translate(396.667 155.124) rotate(180)" fill="#fdb683"/>
-                          <path id="Path_8" data-name="Path 8" d="M276.7,128h13.8v41.407H276.7a20.7,20.7,0,0,1,0-41.407Z" transform="translate(-31.864 -14.284)" fill="#fdb683"/>
-                          <path id="Path_9" data-name="Path 9" d="M321.408,64h48.309a41.407,41.407,0,0,1,41.407,41.407v44.858a65.562,65.562,0,1,1-131.124,0V105.407A41.407,41.407,0,0,1,321.408,64Z" transform="translate(-35.16 -5.494)" fill="#fdc8a2"/>
-                          <path id="Path_10" data-name="Path 10" d="M425.407,115.914l-15.219-5.073A38.3,38.3,0,0,1,384,74.506V40a41.407,41.407,0,0,1,41.407,41.407Z" transform="translate(-49.444 -2.198)" fill="#0e0e0e"/>
-                          <path id="Path_11" data-name="Path 11" d="M367.519,37.8V72.309a164.135,164.135,0,0,1-43.547,20.557,164.336,164.336,0,0,1-47.627,7.048H264V79.21A55.21,55.21,0,0,1,319.21,24h25.975a24.966,24.966,0,0,1,22.336,13.806Z" transform="translate(-32.963 0)" fill="#0e0e0e"/>
-                          <path id="Path_12" data-name="Path 12" d="M351.7,60.1c-.914.914-23.154,22.5-86.938,29.58l-.759.069V82.821a55,55,0,0,1,.44-7c29.813-3.433,49.249-10.136,60.351-15.191,12.12-5.521,17.141-10.291,17.184-10.343Z" transform="translate(-32.963 -3.611)" fill="#331c14"/>
-                          <path id="Path_13" data-name="Path 13" d="M316.045,53.19c-.621.311-15.6,7.626-44.5,7.626l-2.83-.138a54.48,54.48,0,0,1,8.109-13.751c21.817-.768,32.962-6.047,33.083-6.108Z" transform="translate(-33.611 -2.31)" fill="#33221d"/>
-                          <path id="Path_14" data-name="Path 14" d="M317.8,155.6a13.8,13.8,0,1,1,13.8-13.8,13.8,13.8,0,0,1-13.8,13.8Z" transform="translate(-38.456 -14.284)" fill="#844e3a"/>
-                          <path id="Path_15" data-name="Path 15" d="M381.8,155.6a13.8,13.8,0,1,1,13.8-13.8A13.8,13.8,0,0,1,381.8,155.6Z" transform="translate(-47.246 -14.284)" fill="#844e3a"/>
-                          <path id="Path_16" data-name="Path 16" d="M348.1,189.024a44.821,44.821,0,0,1-24.468-7.253l7.528-11.569a31.078,31.078,0,0,0,33.88,0l7.528,11.569A44.821,44.821,0,0,1,348.1,189.024Z" transform="translate(-41.153 -20.08)" fill="#fcb079"/>
-                          <path id="Path_17" data-name="Path 17" d="M24,456H424.272v27.6H24Z" transform="translate(0 -59.333)" fill="#0e0e0e"/>
-                          <rect id="Rectangle_4" data-name="Rectangle 4" width="235" height="165" rx="24" transform="translate(24 176.272)" fill="#d5d5d3"/>
-                          <g id="Group_1" data-name="Group 1" transform="translate(44.704 203.432)">
-                            <path id="Path_18" data-name="Path 18" d="M96,232h27.6v13.8H96Z" transform="translate(-54.593 -232)" fill="#c6c6c4"/>
-                            <path id="Path_19" data-name="Path 19" d="M144,232h27.6v13.8H144Z" transform="translate(-61.185 -232)" fill="#c6c6c4"/>
-                            <path id="Path_20" data-name="Path 20" d="M192,232h27.6v13.8H192Z" transform="translate(-67.778 -232)" fill="#c6c6c4"/>
-                            <path id="Path_21" data-name="Path 21" d="M240,232h27.6v13.8H240Z" transform="translate(-74.37 -232)" fill="#c6c6c4"/>
-                            <path id="Path_22" data-name="Path 22" d="M48,232H75.6v13.8H48Z" transform="translate(-48 -232)" fill="#c6c6c4"/>
-                          </g>
-                          <path id="Path_23" data-name="Path 23" d="M160,385.407h27.6L180.7,344H160Z" transform="translate(-18.679 -43.95)" fill="#cececc"/>
-                          <path id="Path_24" data-name="Path 24" d="M112,424h82.815V451.6H112Z" transform="translate(-12.086 -54.938)" fill="#d5d5d3"/>
-                          <path id="Path_25" data-name="Path 25" d="M149.012,440.617H80L121.407,344h48.309Z" transform="translate(-7.691 -43.95)" fill="#dfdfdd"/>
-                          <path id="Path_26" data-name="Path 26" d="M240,424h82.815V451.6H240Z" transform="translate(-29.666 -54.938)" fill="#d5d5d3"/>
-                          <path id="Path_27" data-name="Path 27" d="M413.321,336v55.21H323.6a27.6,27.6,0,0,0-27.6,27.6v13.8a6.9,6.9,0,0,0,6.9,6.9h110.42A48.309,48.309,0,0,0,461.63,391.21V336Z" transform="translate(-37.358 -42.851)" fill="#fdc8a2"/>
-                        </g>
-                      </svg>                      
-                </figure>
             </section>
 
-            <section class="projects" id="projects">
+            <section class="projects container" id="projects">
                 <h2 class="scroller-h2 show-on-scroll"><span class="prefix">#</span>Projects</h2>
 
                 <article class="projects__article show-on-scroll">
@@ -113,11 +121,34 @@
                     </div>
                 </article>
             </section>
+
+            <section class="contact show-on-scroll" id="contact">
+                <div class="contact__inner container">
+                    <h2 class="contact__h2"><span class="prefix">#</span>Contact</h2>
+
+                    <form action="#">
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+
+                        <div class="input-wrapper">
+                            <input type="text" placeholder="E-mail">
+                        </div>
+
+                        <div class="message-wrapper">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <input class="submit" type="submit">
+                    </form>
+                </div>
+            </section>
         </div>
     </main>
 
     <script src="./js/main.js" type="module"></script>
-    <!-- <script src="./js/scroller.js"></script> -->
+    <script src="./js/scroller.js"></script>
     <script src="./js/cube3D.js"></script>
 </body>
 </html>

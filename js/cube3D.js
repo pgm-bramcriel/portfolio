@@ -56,9 +56,9 @@ ctx.lineCap = "round";
 
 // Looping animation
 let timeDelta, timeLast = 0;
-requestAnimationFrame(loop);
+requestAnimationFrame(looping);
 
-function loop (timeNow) {
+function looping (timeNow) {
     timeDelta = timeNow  - timeLast;
     timeLast = timeNow;
 
@@ -104,19 +104,31 @@ function loop (timeNow) {
         ctx.stroke();
     }
 
-    requestAnimationFrame(loop);
+    requestAnimationFrame(looping);
 }
 
-document.addEventListener('mousemove', (e) => {
-    let canvasPosition = canvas.getBoundingClientRect();
-    
-    if (e.clientX > canvasPosition.x && e.clientX < canvasPosition.x + canvas.width / 1.5 && e.clientY > canvasPosition.y && e.clientY < canvasPosition.y + canvas.height / 1.5) {
-        speedX = 0.30;
-        speedY = 0.50;
-        speedZ = 0.70;
-    } else {
-        speedX = originalXSpeed;
-        speedY = originalYSpeed;
-        speedZ = originalZSpeed;
-    }
+canvas.addEventListener('mouseover', (e) => {
+    speedX = 0.30;
+    speedY = 0.50;
+    speedZ = 0.70;
 })
+
+canvas.addEventListener('mouseleave', (e) => {
+    speedX = originalXSpeed;
+    speedY = originalYSpeed;
+    speedZ = originalZSpeed;
+})
+
+// document.addEventListener('mousemove', (e) => {
+//     let canvasPosition = canvas.getBoundingClientRect();
+    
+//     if (e.clientX > canvasPosition.x && e.clientX < canvasPosition.x + canvas.width / 1.5 && e.clientY > canvasPosition.y && e.clientY < canvasPosition.y + canvas.height / 1.5) {
+//         speedX = 0.30;
+//         speedY = 0.50;
+//         speedZ = 0.70;
+//     } else {
+//         speedX = originalXSpeed;
+//         speedY = originalYSpeed;
+//         speedZ = originalZSpeed;
+//     }
+// })
