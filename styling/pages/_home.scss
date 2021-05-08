@@ -34,7 +34,7 @@ main {
     }
 }
 
-.header {
+.header__inner {
     padding: 1.5rem $padding-s;
     
     @media (min-width: $media-s) {
@@ -44,15 +44,30 @@ main {
 
 .about,
 .projects,
-.contact {
+.contact,
+.header__inner {
     padding: 1.5rem $padding-s;
     
     @media (min-width: $media-s) {
         padding: 2rem $padding-l;
     }
 
-    @media (min-width: 125rem) {
+    @media (min-width: 93rem) {
         padding: 0;
+    }
+}
+
+.header__inner {
+    @media (min-width: 93rem) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+.contact__inner {
+    @media (min-width: 93rem) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 }
 
@@ -94,6 +109,6 @@ main {
 }
 
 .container {
-    max-width: 120rem;
+    max-width: 85rem;
     margin: 0 auto;
 }
