@@ -56,6 +56,9 @@
             textarea {
                 border-radius: $radius-s;
                 width: 100%;
+                resize: none;
+                box-shadow: 8px -8px rgb(182, 182, 182);
+                border: none;
 
                 @media (min-width: $media-m) {
                     width: 20rem;

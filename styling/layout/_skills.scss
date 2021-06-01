@@ -1,0 +1,30 @@
+.skills {
+    h2 {
+        margin-bottom: 3rem;
+    }
+
+    &__icon-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 6rem;
+
+        svg {
+            width: 30%;
+            height: auto;
+            filter: grayscale(50%);
+            transition: 0.2s ease;
+            cursor: pointer;
+            margin-bottom: 1rem;
+
+            @media (min-width: $media-m) {
+                width: 14%;
+            }
+
+            &:hover {
+                filter: grayscale(0%);
+                transform: scale(1.2);
+            }
+        }
+    }
+}

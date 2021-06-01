@@ -45,7 +45,10 @@ main {
 .about,
 .projects,
 .contact__inner,
-.header__inner {
+.header__inner,
+.skills,
+.footer__top,
+.footer__bottom {
     padding: 1.5rem $padding-s;
     
     @media (min-width: $media-s) {
