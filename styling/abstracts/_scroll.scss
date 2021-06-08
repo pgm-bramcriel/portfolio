@@ -2,7 +2,8 @@
 .about__content,
 .scroller-h2,
 .projects__article,
-.contact {
+.contact,
+.skills {
     opacity: 0;
     transform: translateY(-2rem);
     transition: 2s ease;
@@ -13,7 +14,8 @@
 .about__content.is-visible,
 .scroller-h2.is-visible,
 .projects__article.is-visible,
-.contact.is-visible {
+.contact.is-visible,
+.skills.is-visible {
     opacity: 1;
     transform: translateY(2rem);
 }

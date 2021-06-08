@@ -48,7 +48,8 @@ main {
 .header__inner,
 .skills,
 .footer__top,
-.footer__bottom {
+.footer__bottom,
+.to-top {
     padding: 1.5rem $padding-s;
     
     @media (min-width: $media-s) {

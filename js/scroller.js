@@ -7,8 +7,6 @@ function loop () {
     elements.forEach(function(element) {
         if (isElementInViewpoint(element)) {
             element.classList.add('is-visible');
-        } else {
-            element.classList.remove('is-visible');
         }
     });
 
