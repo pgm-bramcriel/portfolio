@@ -34,6 +34,14 @@
             width: 3rem;
             height: 3rem;
             margin-right: 1rem;
+
+            path {
+                transition: 0.2s ease;
+            }
+            
+            &:hover path {
+                fill: $main-red;
+            }
         }
     }
 }
