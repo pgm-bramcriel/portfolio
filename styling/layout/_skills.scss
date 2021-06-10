@@ -18,7 +18,7 @@
             height: auto;
             filter: grayscale(50%);
             transition: 0.2s ease;
-            cursor: pointer;
+            cursor: default;
             margin-bottom: 1rem;
 
             @media (min-width: $media-m) {

@@ -61,6 +61,10 @@
                 height: auto;
             }
 
+            @media (min-width: $media-l) {
+                height: 30rem;
+            }
+
             img {
                 width: 100%;
                 height: 100%;

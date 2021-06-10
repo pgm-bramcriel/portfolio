@@ -11,6 +11,19 @@
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            &__nav {
+                li {
+                    a {
+                        transition: 0.2s ease;
+
+                        &:hover {
+                            color: $main-red;
+                        }
+                    }
+
+                }
+            }
         }
 
         h3 {
@@ -34,6 +47,7 @@
             width: 3rem;
             height: 3rem;
             margin-right: 1rem;
+            fill: $main-white;
 
             path {
                 transition: 0.2s ease;
